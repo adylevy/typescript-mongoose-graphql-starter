@@ -3,10 +3,16 @@
 Template starter project to develop `TypeScript` backend with `GraphQL` strongly typed models
 `NodeJS`, `MongoDB`, `GraphQL`, `Apollo` and `Express`.
 
-# In order to run project put in .env file something like: 
+# In order to run project put in .env file something like:
 DATABASE_URL=mongodb://localhost:27017/typegoose
 PORT=2020
 PASSWORD_SALT=xx
+
+# Running
+* clone the repo
+* npm i
+* npm run dev
+* go to localhost:2020/graphql
 
 # GraphQL Queries:
 
@@ -16,10 +22,10 @@ PASSWORD_SALT=xx
       id
       role
     }}
-    
-# GraphQL Mutations: 
 
-    
+# GraphQL Mutations:
+
+
     # createUser
     mutation {
       createUser( name:"adyx", password:"123456") {
