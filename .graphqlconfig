@@ -1,0 +1,13 @@
+{
+    "projects": {
+        "sample-project": {
+            "schemaPath": "src/common/schema.graphql",
+            "includes":   ["*.graphql"],
+            "extensions": {
+                "endpoints": {
+                    "dev": "http://localhost:3000/graphql"
+                }
+            }
+        }
+    }
+}

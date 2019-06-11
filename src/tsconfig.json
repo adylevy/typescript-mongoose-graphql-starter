@@ -1,0 +1,55 @@
+{
+    "compilerOptions": {
+        "outDir": "../build",
+        "baseUrl": "./",
+        "rootDirs": [
+            "./"
+        ],
+        "typeRoots": [
+            "./common/ambient-declarations"
+        ],
+        "paths": {
+            "/*": [
+                "*"
+            ]
+        },
+        "target":           "es6",  // es-tspm package currently supports ^es2018
+        "lib":              ["esnext"],
+        "module":           "commonjs",
+        "moduleResolution": "node",
+        "sourceMap":      false, // es-tspm distorts source mappings, so there is no use
+        "declaration":    false,
+        "declarationMap": false,
+        "esModuleInterop":              true,
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata":  true, // Typegoose, TypeGraphQL requirement
+        /* Checking severity level */
+        "strict":                           true,
+        "noUnusedLocals":                   true,
+        "noUnusedParameters":               true,
+        "noImplicitAny":                    true,
+        "noImplicitThis":                   true,
+        "noImplicitReturns":                true,
+        "noFallthroughCasesInSwitch":       true,
+        "noStrictGenericChecks":            false,
+        "strictBindCallApply":              true,
+        "strictFunctionTypes":              true,
+        "strictNullChecks":                 true,
+        "strictPropertyInitialization":     true,
+        "allowUnreachableCode":             false,
+        "forceConsistentCasingInFileNames": true,
+        /* Misc */
+        "alwaysStrict": true,
+        "pretty":       true
+    },
+    "files": [
+        "app.ts"
+    ],
+    "include": [
+        "**/*"
+    ],
+    "exclude": [
+        "node_modules/**/*", "build"
+    ]
+}
